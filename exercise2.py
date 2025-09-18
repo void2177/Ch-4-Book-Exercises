@@ -1,12 +1,15 @@
 import turtle
 
 """PUT YOUR FUNCTIONS HERE"""
-def rectangle(width, height):
-    for i in range(4):
-        t.forward(width)
-        t.left(90)
-        t.forward(height)
-        t.left(90)
+
+def rhombus(length, angle):
+    for i in range(2):
+        t.forward(length)
+        t.left(angle)
+        t.forward(length)
+        t.left(180-angle)
+
+
 
 # Create a turtle object
 t = turtle.Turtle()
@@ -25,7 +28,7 @@ screen.setup(width=600, height=600)
 t.clear()
 
 """PUT YOUR DRAW CALLS TO FUNCTIONS HERE"""
-rectangle(50,60)
+rhombus(100, 45)
+
 # Close the turtle graphics window when clicked
 turtle.exitonclick()
-
