@@ -1,21 +1,8 @@
 import turtle
-from multiprocessing.util import sub_debug
 
 """PUT YOUR FUNCTIONS HERE"""
 
-def parallelogram(sidea, sideb, angle):
-    for i in range(2):
-        t.forward(sidea)
-        t.left(angle)
-        t.forward(sideb)
-        t.left(180-angle)
-
-def rhombus(length, angle):
-    parallelogram(sidea=length, sideb=length, angle=angle)
-
-def rectangle(width, height):
-    parallelogram(sidea=width, sideb=height, angle=90)
-
+def arc(radius, angle):
 
 
 # Create a turtle object
@@ -35,10 +22,7 @@ screen.setup(width=600, height=600)
 t.clear()
 
 """PUT YOUR DRAW CALLS TO FUNCTIONS HERE"""
-##parallelogram(80, 40, 45)
-##rhombus(50, 45)
-##rectangle(50,60)
-
+petal(8,80)
 
 # Close the turtle graphics window when clicked
 turtle.exitonclick()
